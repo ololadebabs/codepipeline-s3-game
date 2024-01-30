@@ -18,7 +18,6 @@ The code for this image-matching game is hosted in this GitHub repository. I cre
 
 The bucket is unblocked for public access. Under permission, we have to add a bucket policy to make the content of the bucket accessible to the whole world. By validating the bucket policy with our bucket name. The bucket policy has these 4 keywords or phrases (Allow, asterik*, GetObject, Bucket-Name) which simply means we want to allow everybody(*) to view the specified bucket. See bucket policy below;
 
-![](images/bucketPolicy.png)
 
 Everything is set up with GitHub and code building, we have created s3 and configured it for static website hosting, now it’s time to set up the codepipeline that will orchestrate getting the code from GitHub to the bucket and automatically deploy it. The next step is to create a pipeline using AWS Code Pipeline. This pipeline pulls the code from Github and deploys it to S3 whenever a change is detected in the code.
 
