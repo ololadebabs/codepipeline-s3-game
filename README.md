@@ -4,8 +4,6 @@
 
 A simple image-matching game. The user clicks two cards (images of memes) to try to match them. If there's a match, the cards disappear from the board. If there's no match, the cards are flipped back to their blank side so the user can try again.
 
-![](images/finalProduct.png)
-
 **PROJECT SUMMARY**
 
 Using AWS to create a Continuous Deployment Pipeline that will automatically deploy whenever changes are made to the code. The code for a game is hosted in Github. An S3 bucket for static website hosting is then created for a continuous deployment pipeline (using AWS Code Pipeline) so that the code can be automatically deployed whenever changes are made.
@@ -27,6 +25,10 @@ Everything is set up with GitHub and code building, we have created s3 and confi
 Code Pipeline Source                |       Code Pipeline Deploy
 :----------------------------------:|:----------------------------------:
 ![](images/CodePipelinePage1.png)   | ![](images/CodePipelinePage2.png)
+
+Initial Output                      |      Output after Updating  the html code
+:----------------------------------:|:----------------------------------:
+![](images/finalProduct.png)        | ![](images/CDpipeline.png)
 
 **IDEAS FOR ADDITIONAL FEATURES:**   A scoring mechanism, A timer, Add additional cards, Multi-player capabilities so you can compare scores
 
